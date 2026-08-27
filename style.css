@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f5;
+    color: #333;
+}
+
+header {
+    background: #8b4a5a;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.inicio {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f3d7d9;
+}
+
+.inicio h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.inicio p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background: #8b4a5a;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 8%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.produto {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.imagem {
+    background: #f1e1df;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    margin-bottom: 10px;
+}
+
+.produto p {
+    color: #8b4a5a;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.produto button {
+    background: #8b4a5a;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background: #6f3847;
+}
+
+.sobre {
+    background: #f3d7d9;
+    text-align: center;
+}
+
+.sobre p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contato {
+    text-align: center;
+}
+
+.contato p {
+    margin: 10px;
+}
+
+footer {
+    background: #8b4a5a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inicio h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+}
